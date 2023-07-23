@@ -1,61 +1,54 @@
-import React from "react";
-import "./Home.css";
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
-// import Swiper and modules styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import {Swiper , SwiperSlide } from "swiper/react";
 
-// import styles bundle
-import "swiper/css/bundle";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
+import "./Home.css";
 
 const Home = () => {
-  // init Swiper:
-  const swiper = new Swiper(".swiper", {
-    // configure Swiper to use modules
-    modules: [Navigation, Pagination],
-    // Optional parameters
-    direction: "vertical",
-    loop: true,
+  // const swiper = new Swiper(".mySwiper", {
+  //   // Optional parameters
+  //   direction: "vertical",
+  //   loop: true,
 
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
+  //   // If we need pagination
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //   },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  //   // Navigation arrows
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
 
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-  });
+  //   // And if we need scrollbar
+  //   scrollbar: {
+  //     el: ".swiper-scrollbar",
+  //   },
+  // });
   return (
     <div className="home-wrapper">
-      <div class="swiper">
-        {/* <!-- Additional required wrapper --> */}
-        <div class="swiper-wrapper">
-          {/* <!-- Slides --> */}
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          ...
-        </div>
-        {/* <!-- If we need pagination --> */}
-        <div class="swiper-pagination"></div>
-
-        {/* <!-- If we need navigation buttons --> */}
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        {/* <!-- If we need scrollbar --> */}
-        <div class="swiper-scrollbar"></div>
-      </div>
+      <Swiper
+        pagination={{
+          dynamicBullets: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
     </div>
   );
 };
