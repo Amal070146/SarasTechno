@@ -1,0 +1,14 @@
+.home-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0%;
+    margin: auto;
+    width: 100vw;
+    gap: 20px;
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+}
