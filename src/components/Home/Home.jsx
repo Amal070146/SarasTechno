@@ -69,7 +69,16 @@ const Home = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="home-content-wrapper"></div>
+      <div className="home-content-wrapper">
+        <h1>
+          Manufacturing<br></br>Futuristic Machines.
+        </h1>
+        <p>
+          This is all some random text. This is an about us section. Write about
+          the company industry. This is all some random text. This is an about
+          us section. Write about the company industry.
+        </p>
+      </div>
     </div>
   );
 };
