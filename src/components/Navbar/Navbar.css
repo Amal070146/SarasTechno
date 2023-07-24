@@ -1,0 +1,5 @@
+.navbar-wrapper{
+    position: fixed;
+    z-index: 9999;
+    top: 20px;
+}

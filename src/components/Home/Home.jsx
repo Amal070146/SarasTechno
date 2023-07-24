@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
-import {Swiper , SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -9,46 +9,67 @@ import { Navigation, Pagination } from "swiper/modules";
 import "./Home.css";
 
 const Home = () => {
-  // const swiper = new Swiper(".mySwiper", {
-  //   // Optional parameters
-  //   direction: "vertical",
-  //   loop: true,
-
-  //   // If we need pagination
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //   },
-
-  //   // Navigation arrows
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-
-  //   // And if we need scrollbar
-  //   scrollbar: {
-  //     el: ".swiper-scrollbar",
-  //   },
-  // });
   return (
     <div className="home-wrapper">
-      <Swiper
-        pagination={{
-          dynamicBullets: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
+      <div className="swiperWrapper">
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img
+              src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tcGFueXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://d6xcmfyh68wv8.cloudfront.net/learn-content/uploads/2019/09/register-company-online.png"
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmkY8kwKIcDtMLbhCmsYFJQ1HD87O4R3gePg&usqp=CAU"
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://img.freepik.com/premium-photo/group-business-people-work-together-office_207634-6048.jpg"
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tcGFueXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://d6xcmfyh68wv8.cloudfront.net/learn-content/uploads/2019/09/register-company-online.png"
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmkY8kwKIcDtMLbhCmsYFJQ1HD87O4R3gePg&usqp=CAU"
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://img.freepik.com/premium-photo/group-business-people-work-together-office_207634-6048.jpg"
+              alt=""
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      <div className="home-content-wrapper"></div>
     </div>
   );
 };
