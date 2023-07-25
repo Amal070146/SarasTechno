@@ -47,7 +47,7 @@ const Products = () => {
   ];
   return (
     <div className="products-wrapper">
-      <div>
+      <div className="product-header">
         <h1>OUR PRODUCTS</h1>
       </div>
       <div className="products-content-wrapper">
@@ -58,7 +58,7 @@ const Products = () => {
           </div>
         ))}
       </div>
-      <div>
+      <div className="product-button">
         <a href="">
           <p>Browse Products</p>
           <svg
