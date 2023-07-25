@@ -1,0 +1,32 @@
+.products-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.products-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 5vw;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.products-individual-wrapper {
+  background: var(--light, #f1f1f1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 260px;
+}
+
+.products-individual-wrapper:hover {
+  background: var(--primary, #f48a01);
+}
