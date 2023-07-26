@@ -4,6 +4,8 @@ import left from "../../assets/nav-left.png";
 import right from "../../assets/nav-right.png";
 import logo from "../../assets/Logo.png";
 import { useReactPath } from "./path.hook";
+import { BiMenu } from "react-icons/bi";
+import { MdClose } from "react-icons/md";
 
 const Navbar = () => {
   const [openmenu, setopenmenu] = useState(false);
@@ -58,6 +60,43 @@ const Navbar = () => {
                 </p>
               </a>
             ))}
+          </div>
+          <div className="navbar-mob">
+            <button
+              style={{ backgroundColor: "transparent", border: "none" }}
+              onClick={openMenu}
+            >
+              {openmenu ? (
+                <MdClose style={{ color: "#4A142E", fontSize: "40px" }} />
+              ) : (
+                <BiMenu style={{ color: "#4A142E", fontSize: "40px" }} />
+              )}
+              {/* <BiMenu style={{ color: "#4A142E", fontSize: "40px" }} /> */}
+            </button>
+            {openmenu && (
+              <div className="menu-div">
+                {navContent.map((content, i) => (
+                  <a
+                    style={{ textDecoration: "none" }}
+                    href={`#${content}`}
+                    key={i.toString() + content}
+                  >
+                    <p
+                      style={{
+                        color: window.location.href.includes(`#${content}`)
+                          ? "#F48A01"
+                          : "#4A142E",
+                        textTransform: "capitalize",
+                        padding: "5px 20px",
+                        fontWeight: 700,
+                      }}
+                    >
+                      {content}
+                    </p>
+                  </a>
+                ))}
+              </div>
+            )}{" "}
           </div>
         </div>
       </div>
