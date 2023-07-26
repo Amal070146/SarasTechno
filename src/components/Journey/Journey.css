@@ -1,0 +1,28 @@
+.ourjourney-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.ourjourney-image-wrapper{
+    width: 30%;
+    height: fit-content;
+    background-color: aqua;
+}
+
+
+.ourjourney-content{
+    width: 70%;
+    height: 100%;
+    background: url('../../assets/bgdivourjourney.png') center center/cover no-repeat;
+}
+
+.ourjourney-image-wrapper>img{
+    width: 100%;
+    min-width: 340px;
+
+}
