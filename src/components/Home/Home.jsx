@@ -78,6 +78,19 @@ const Home = () => {
           the company industry. This is all some random text. This is an about
           us section. Write about the company industry.
         </p>
+        <a
+          href=""
+          style={{
+            backgroundColor: "#f48a01",
+            width: "fit-content",
+            padding: "10px 15px",
+            textDecoration: "none",
+            color: "white",
+            borderRadius: "5px",
+          }}
+        >
+          Become a Dealer
+        </a>
       </div>
     </div>
   );
