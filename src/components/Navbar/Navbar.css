@@ -43,7 +43,7 @@
 }
 .desk-left-nav-content {
   position: absolute;
-  top: 15%;
+  top: 12%;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -58,16 +58,25 @@
 
 @media screen and (max-width: 1400px) {
   .desk-nav-right-content {
-  right: 33%;
-}
-}
-@media screen and (max-width: 1200px) {
- .desk-nav-right-content > div {
- 
-  font-size: 13px;
-}
-}
-@media screen and (max-width: 1200px) {
-  .desk-left-nav {
+    right: 33%;
   }
+}
+@media screen and (max-width: 1200px) {
+  .desk-nav-right-content > div {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .desk-nav-right {
+    display: none;
+  }
+  .desk-left-nav {
+  left: 7%;
+
+  width: 85%;
+}
+.desk-left-nav-content-links {
+ 
+  padding-right: 20px;
+}
 }
