@@ -1,28 +1,84 @@
-.ourjourney-wrapper{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: fit-content;
-    flex-wrap: wrap;
+.ourjourney-wrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
 }
 
-.ourjourney-image-wrapper{
+.ourjourney-image-wrapper {
+  width: 40%;
+  height: 40%;
+  background-color: #4a142e;
+}
+.ourjourney-image-wrapper > img {
+  width: 100%;
+  height: 100%;
+  height: fit-content;
+  object-fit: contain;
+  min-width: 340px;
+  min-height: 340px;
+}
+.ourjourney-content {
+  width: 60%;
+  color: white;
+  background: url("../../assets/bgdivourjourney.png") center center/cover
+    no-repeat;
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 5%;
+  gap: 15px;
+  
+}
+.ourjourney-content h1{
+    font-size: 50px;
+}
+.ourjourney-content p{
+    font-size: 20px;
+}
+.ourjourney-content > a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: fit-content;
+  background: var(--primary, #f48a01);
+  gap: 10px;
+}
+@media screen and (max-width: 1100px) {
+.ourjourney-content h1{
+    font-size: 30px;
+}
+.ourjourney-content p{
+    font-size: 16px;
+}
+}
+@media screen and (max-width: 850px) {
+  .ourjourney-image-wrapper {
     width: 30%;
-    height: fit-content;
-    background-color: aqua;
+  }
 }
-
-
-.ourjourney-content{
-    width: 70%;
-    height: 100%;
-    background: url('../../assets/bgdivourjourney.png') center center/cover no-repeat;
-}
-
-.ourjourney-image-wrapper>img{
+@media screen and (max-width: 730px) {
+  .ourjourney-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ourjourney-image-wrapper {
     width: 100%;
-    min-width: 340px;
+    height: 40%;
+    background-color: #4a142e;
+  }
+  .ourjourney-content {
+    width: 90%;
+    padding: 5% 5%;
+  }
+}
 
+@media screen and (max-width: 380px) {
+  .ourjourney-content {
+    width: 90%;
+    min-width: 300px;
+  }
 }
