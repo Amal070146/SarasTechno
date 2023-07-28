@@ -4,7 +4,7 @@ import logo from '../../assets/Logo.png'
 
 const Footer = () => {
   return (
-    <div className="footer-wrapper">
+    <div className="footer-wrapper" id="contact">
       <div className="footer-left">
         <img className="logos" src={logo} alt="" />
         <p>
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-right">
-        <div>
+        <div className="footer-content-div">
           <h3>Quick Links</h3>
           <div>
             <p>Privacy Policy</p>
@@ -56,7 +56,7 @@ const Footer = () => {
             <p>Find us!</p>
           </div>
         </div>
-        <div>
+        <div className="footer-content-div">
           <h3>Office</h3>
           <div className="flex">
             <svg
@@ -74,7 +74,7 @@ const Footer = () => {
             <p>Aloor, Vellanchira P.O, Thrissur Dist, Kerala, India 680 697</p>
           </div>
         </div>
-        <div>
+        <div className="footer-content-div">
           <h3>Contact</h3>
           <div>
             <div className="flex">

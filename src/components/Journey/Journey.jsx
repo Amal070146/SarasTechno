@@ -4,7 +4,7 @@ import image from "../../assets/imgourjourney.png";
 
 const Journey = () => {
   return (
-    <div className="ourjourney-wrapper">
+    <div className="ourjourney-wrapper" id="about">
       <div className="ourjourney-image-wrapper">
         <img src={image} alt="" />
       </div>

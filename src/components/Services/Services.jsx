@@ -3,7 +3,7 @@ import "./Services.css";
 
 const Services = () => {
   return (
-    <div className="service-wrapper">
+    <div className="service-wrapper" id="vlog">
       <div className="first-services">
         <div className="first-services-individual">
           <svg

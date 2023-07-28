@@ -46,7 +46,7 @@ const Products = () => {
     },
   ];
   return (
-    <div className="products-wrapper">
+    <div className="products-wrapper" id="products">
       <div className="product-header">
         <h1>OUR PRODUCTS</h1>
       </div>

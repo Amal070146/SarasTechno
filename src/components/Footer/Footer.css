@@ -46,7 +46,7 @@
   text-decoration: none;
   color: #9b9b9b;
 }
-.footer-right > div {
+.footer-content-div{
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -76,10 +76,20 @@
 }
 
 @media screen and (max-width:500px){
+  .footer-left{
+  align-items: center;
+text-align: center;
+  }
  .footer-right {
   justify-content: center;
  flex-direction: column;
   width: 80%;
-  align-items: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.footer-content-div{
+  display: flex;
+  align-items: center;
+
 }
 }
