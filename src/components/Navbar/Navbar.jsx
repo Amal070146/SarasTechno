@@ -37,7 +37,7 @@ const Navbar = () => {
         <img src={left} alt="" />
         <div className="desk-left-nav-content">
           <div>
-            <img src={logo} alt="" />
+            <img className="logo" src={logo} alt="" />
           </div>
           <div className="desk-left-nav-content-links">
             {navContent.map((content, i) => (

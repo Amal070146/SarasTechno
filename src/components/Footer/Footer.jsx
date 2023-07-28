@@ -4,24 +4,21 @@ import logo from '../../assets/Logo.png'
 
 const Footer = () => {
   return (
-    <div>
-      <div>
-        <img src={logo} alt="" />
+    <div className="footer-wrapper">
+      <div className="footer-left">
+        <img className="logos" src={logo} alt="" />
         <p>
           This is all some random text. This is an about us section. Write about
           the company industry. This is all some random text.
         </p>
-        <div>
+        <div className="footer-social-media-wrapper">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 18 33"
             fill="none"
             className="footer-social-media"
           >
-            <path
-              d="M11.4529 18.9541H15.5432L17.1793 12.4096H11.4529V9.13735C11.4529 7.45214 11.4529 5.8651 14.7251 5.8651H17.1793V0.367729C16.6459 0.297376 14.6318 0.138672 12.5049 0.138672C8.06281 0.138672 4.90837 2.84973 4.90837 7.82845V12.4096H0V18.9541H4.90837V32.8611H11.4529V18.9541Z"
-              fill="#9B9B9B"
-            />
+            <path d="M11.4529 18.9541H15.5432L17.1793 12.4096H11.4529V9.13735C11.4529 7.45214 11.4529 5.8651 14.7251 5.8651H17.1793V0.367729C16.6459 0.297376 14.6318 0.138672 12.5049 0.138672C8.06281 0.138672 4.90837 2.84973 4.90837 7.82845V12.4096H0V18.9541H4.90837V32.8611H11.4529V18.9541Z" />
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +46,7 @@ const Footer = () => {
           </svg>
         </div>
       </div>
-      <div>
+      <div className="footer-right">
         <div>
           <h3>Quick Links</h3>
           <div>
@@ -60,13 +57,12 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          {" "}
           <h3>Office</h3>
-          <div>
+          <div className="flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="13"
-              height="16"
+              width={"25px"}
+              height="25"
               viewBox="0 0 13 16"
               fill="none"
             >
@@ -81,11 +77,11 @@ const Footer = () => {
         <div>
           <h3>Contact</h3>
           <div>
-            <div>
+            <div className="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="20"
+                height="20"
                 viewBox="0 0 16 16"
                 fill="none"
               >
@@ -96,14 +92,15 @@ const Footer = () => {
               </svg>
               <div>
                 <a href="">0480 2786655</a>
+                <br></br>
                 <a href="">+91 9349165966</a>
               </div>
             </div>
-            <div>
+            <div className="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="13"
+                width="20"
+                height="20"
                 viewBox="0 0 16 13"
                 fill="none"
               >
