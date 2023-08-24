@@ -118,7 +118,7 @@ const Navbar = () => {
                 stroke-width="0.3"
               />
             </svg>
-            <p>CALL US : +91 94007 43624</p>
+            <a href="tel:+91 94007 43624" style={{color:"white"}}>CALL US : +91 94007 43624</a>
           </div>
         </a>
       </div>
